@@ -1,8 +1,10 @@
+//your JS code here. If required.
 window.onload = function () {
   const outputElement = document.getElementById("output");
 
   // Insert the loading row
   const loadingRow = document.createElement("tr");
+	loadingRow.id = "loading";
   const loadingCell = document.createElement("td");
   loadingCell.setAttribute("colspan", "2");
   loadingCell.textContent = "Loading...";
@@ -69,5 +71,5 @@ window.onload = function () {
     totalRow.appendChild(totalTimeCell);
 
     outputElement.appendChild(totalRow);
-  });
+  });
 };
